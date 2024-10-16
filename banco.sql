@@ -7,4 +7,4 @@ CREATE TABLE IF NOT EXISTS produtos(
     imagem VARCHAR(300)
 );
 INSERT INTO produtos VALUES
-(1,'Iphone','Celular RUIM',5000.50,'SEM IMAGEM');
+(1,'Iphone','Celular RUIM',5000.50,'https://images.tcdn.com.br/img/img_prod/616573/apple_iphone_14_pro_5g_6gb_ram_tela_6_1_1015_3_89b1382594eaffcd5ba54081bfeb9244.jpg');
