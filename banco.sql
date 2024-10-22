@@ -15,8 +15,8 @@ CREATE TABLE IF NOT EXISTS usuarios(
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(50),
     email VARCHAR(50),
-    created_at TIMESTAMP,
-    updated_at TIMESTAMP
+    create_at TIMESTAMP,
+    updated TIMESTAMP
 );
 INSERT INTO usuarios VALUES
 (1,'Maria das Graças de Oliveira', 'maria.oliveira7@gmail.com','2024-10-21','2024-10-21');
