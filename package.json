@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx watch src/main.ts",
     "test": "vitest -w",
-    "build":"npm install && tsc",
+    "build": "npm install && tsc",
     "start": "node ./dist/main.js"
   },
   "author": "marcelaoliveira",
@@ -22,6 +22,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.0",
+    "mongodb": "^6.12.0",
     "mysql2": "^3.11.3"
   }
 }
