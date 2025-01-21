@@ -15,7 +15,7 @@ app.use(cors())
 //ROTAS
 
 import BancoMysql from './db/bancoMysql'
-import BancoMongo from './db/banco-mongo'
+import BancoMongo from './db/bancoMongo'
 
 app.get("/produtos",async(req,res)=>{
     try{
