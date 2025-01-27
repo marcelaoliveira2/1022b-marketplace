@@ -30,13 +30,26 @@ app.get("/produtos",async(req,res)=>{
     }  
 })
 
+app.get("/produtos/:id",async(req,res)=>{
+    try{
+        const banco = new BancoMongo();
+        const result = await banco.listarPorId(req.params.id)
+        console.log(result)
+        await banco.end()
+        res.send(result)
+    }catch(e){
+        console.log(e)
+        res.status(500).send("Erro do servidor")
+    }  
+})
+
 app.post("/produtos",async(req,res)=>{
     try{
         const {id,nome,descricao,preco,imagem} = req.body
         console.log(id,nome,descricao,preco,imagem)
         const banco = new BancoMongo();
 
-        const produto = {id,nome,descricao,preco,imagem}
+        const produto = {id:parseInt(id),nome,descricao,preco,imagem}
 
         const result = await banco.inserir(produto)
         console.log(result)
